@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#140c22">
+  <title>Para Nicole 💛</title>
+  <meta name="description" content="Nicole, tengo algo para ti 💛">
+  <meta property="og:title" content="Para Nicole 💛">
+  <meta property="og:description" content="Nicole, tengo algo para ti 💛">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f6c84b'/%3E%3Ccircle cx='32' cy='32' r='10' fill='%23552f18'/%3E%3Cg fill='%23ffe77a'%3E%3Cellipse cx='32' cy='12' rx='8' ry='14'/%3E%3Cellipse cx='32' cy='52' rx='8' ry='14'/%3E%3Cellipse cx='12' cy='32' rx='14' ry='8'/%3E%3Cellipse cx='52' cy='32' rx='14' ry='8'/%3E%3C/g%3E%3C/svg%3E">
+  <style>
+    :root{--gold:#ffd85a;--cream:#fff8dc;--ink:#190e29;--violet:#2d1741}
+    *{box-sizing:border-box}html,body{height:100%;margin:0}body{overflow:hidden;background:radial-gradient(circle at 50% 18%,#4d285d 0,#25142f 35%,#120a1d 76%);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+    .scene{position:relative;min-height:100%;display:grid;place-items:center;padding:clamp(18px,5vw,42px);isolation:isolate}
+    .glow{position:absolute;width:min(88vw,560px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,215,94,.2),transparent 68%);filter:blur(10px);transform:translateY(4vh);opacity:.6}
+    .star{position:absolute;width:4px;height:4px;border-radius:50%;background:#ffe997;box-shadow:0 0 12px #ffd85a;animation:twinkle 2.7s ease-in-out infinite;opacity:.35}.star:nth-child(2){left:12%;top:15%;animation-delay:.4s}.star:nth-child(3){right:13%;top:25%;animation-delay:1.1s}.star:nth-child(4){left:18%;bottom:24%;animation-delay:1.7s}.star:nth-child(5){right:17%;bottom:18%;animation-delay:.9s}.star:nth-child(6){left:50%;top:8%;animation-delay:2.1s}
+    .intro{z-index:4;text-align:center;max-width:500px;transition:opacity .75s ease,transform .75s ease}.eyebrow{display:block;margin-bottom:18px;color:#ffe88f;font:600 .78rem/1.2 Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase}.intro h1{margin:0 0 14px;font-size:clamp(2.2rem,9vw,4.2rem);line-height:1.03;font-weight:500;text-wrap:balance}.intro p{margin:0 auto 30px;max-width:330px;color:#eadff0;font:400 clamp(1rem,4vw,1.16rem)/1.55 Arial,sans-serif}
+    .open-btn{min-width:225px;border:1px solid rgba(255,231,141,.65);border-radius:999px;padding:16px 24px;background:linear-gradient(135deg,#ffe779,#eeb82f);box-shadow:0 12px 36px rgba(238,184,47,.24),inset 0 1px 0 rgba(255,255,255,.7);color:#33200a;font:700 1rem/1 Arial,sans-serif;cursor:pointer;transition:transform .2s,box-shadow .2s}.open-btn:hover{transform:translateY(-2px);box-shadow:0 16px 42px rgba(238,184,47,.34)}.open-btn:active{transform:scale(.97)}.open-btn:focus-visible{outline:3px solid white;outline-offset:4px}
+    .gift{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 18px max(20px,env(safe-area-inset-bottom));pointer-events:none;opacity:0}.bouquet-wrap{position:relative;width:min(94vw,600px);height:min(71vh,690px);display:grid;place-items:end center;transform:translateY(26%) scale(.35);filter:blur(8px);opacity:0}.bouquet{display:block;max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 20px 30px rgba(0,0,0,.32));transform-origin:50% 90%}.message{z-index:3;margin-top:-6px;text-align:center;opacity:0;transform:translateY(16px)}.message h2{margin:0;color:#fff6ca;font-size:clamp(1.55rem,6vw,2.6rem);font-weight:500}.message p{margin:9px 0 0;color:#f4d96f;font:600 .83rem/1.2 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+    .petals{position:absolute;inset:0;overflow:hidden;pointer-events:none}.petal{position:absolute;top:-10%;width:10px;height:17px;border-radius:80% 20% 70% 30%;background:linear-gradient(145deg,#ffeb72,#eeb52a);opacity:0;animation:fall 5.5s linear infinite;animation-play-state:paused}
+    .opened .intro{opacity:0;transform:translateY(-28px);pointer-events:none}.opened .gift{opacity:1}.opened .bouquet-wrap{animation:reveal 2.25s cubic-bezier(.18,.8,.24,1) .2s forwards}.opened .bouquet{animation:breathe 4s ease-in-out 2.5s infinite}.opened .message{animation:showMessage .9s ease 2.25s forwards}.opened .petal{animation-play-state:running}.petal:nth-child(1){left:9%;animation-delay:1.1s}.petal:nth-child(2){left:24%;animation-delay:3.3s;animation-duration:6.3s}.petal:nth-child(3){left:42%;animation-delay:2.4s}.petal:nth-child(4){left:61%;animation-delay:4.2s;animation-duration:6.8s}.petal:nth-child(5){left:78%;animation-delay:1.8s}.petal:nth-child(6){left:91%;animation-delay:3.8s;animation-duration:6.1s}
+    @keyframes reveal{0%{transform:translateY(26%) scale(.35);filter:blur(8px);opacity:0}48%{opacity:1;filter:blur(0)}75%{transform:translateY(-1%) scale(1.04)}100%{transform:translateY(0) scale(1);filter:blur(0);opacity:1}}
+    @keyframes showMessage{to{opacity:1;transform:none}}@keyframes breathe{50%{transform:translateY(-7px) rotate(.5deg)}}@keyframes twinkle{50%{opacity:1;transform:scale(1.8)}}@keyframes fall{0%{opacity:0;transform:translate3d(0,-8vh,0) rotate(0)}10%{opacity:.85}100%{opacity:0;transform:translate3d(45px,115vh,0) rotate(600deg)}}
+    @media (max-height:690px){.bouquet-wrap{height:64vh}.message{margin-top:-10px}.message h2{font-size:1.45rem}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important}.opened .bouquet-wrap,.opened .message{opacity:1;transform:none;filter:none}}
+  </style>
+</head>
+<body>
+  <main class="scene" id="scene">
+    <div class="glow" aria-hidden="true"></div><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i>
+    <section class="intro" aria-labelledby="title">
+      <span class="eyebrow">Un detalle para alguien especial</span>
+      <h1 id="title">Nicole, tengo algo para ti 💛</h1>
+      <p>Hay detalles que no necesitan una fecha para hacer bonito el día.</p>
+      <button class="open-btn" id="open" type="button">Toca para descubrirlo</button>
+    </section>
+    <section class="gift" aria-live="polite" aria-hidden="true">
+      <div class="bouquet-wrap"><img class="bouquet" src="https://para-nicole.marcoespinozasalas.chatgpt.site/assets/ramo-nicole.png" alt="Ramo de girasoles, rosas y flores amarillas para Nicole"></div>
+      <div class="message"><h2>Unas flores amarillas para ti, Nicole 💛</h2></div>
+    </section>
+    <div class="petals" aria-hidden="true"><b class="petal"></b><b class="petal"></b><b class="petal"></b><b class="petal"></b><b class="petal"></b><b class="petal"></b></div>
+  </main>
+  <script>
+    const scene=document.getElementById('scene');const button=document.getElementById('open');const gift=document.querySelector('.gift');
+    button.addEventListener('click',()=>{scene.classList.add('opened');gift.setAttribute('aria-hidden','false');button.disabled=true;});
+  </script>
+</body>
+</html>
